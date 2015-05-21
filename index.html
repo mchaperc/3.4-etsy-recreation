@@ -9,9 +9,13 @@
 </head>
 <body>
 	<header class="main">
+		<div class="outer-container">
 		<div class="main-title-search-browse">
 			<h1 class="main-title">Etsy</h1>
-			<input type="search" id="keyword-search" autofocus>
+			<form>
+			<input type="search" id="keyword-search" placeholder="Search..." autofocus>
+			<button class="search-button">Search</button>
+			</form>
 			<button class="browse">Browse <i class="fa fa-caret-down"></i></button>
 		</div>
 		<div class="main-register-signin-cart">
@@ -19,8 +23,10 @@
 			<button class="signin">Sign In</button>
 			<i class="fa fa-shopping-cart fa-2x"></i>
 		</div>
+		</div>
 	</header>
 	<section class="shop-by">
+		<div class="outer-container">
 		<h3 class="shop-by-title">Shop by "whiskey" category</h3>
 		<div class="shop-by-category">
 			<img src="" alt="">
@@ -52,8 +58,10 @@
 			<p></p>
 			<i class="fa fa-chevron-right"></i>
 		</div>
+		</div>
 	</section>
 	<section class="content">
+	<div class="outer-container">
 		<sidebar class="content-sidebar">
 			<h4 class="content-categories-title">Show results for:</h4>
 			<section class="content-categories">
@@ -72,7 +80,7 @@
 					<h4 class="content-refine-price">Price</h4>
 					<input type="number" placeholder="Low"> 
 					<p>to</p>
-					<input type="number" placeholder="Low">
+					<input type="number" placeholder="High">
 					<button class="content-price-submit"><i class="fa fa-caret-right"></i></button>
 					<hr width="100%">
 				</div>
@@ -147,11 +155,14 @@
 				<li>8</li>
 				<li>...</li>
 				<li>250</li>
-				<li><i class="fa fa-chevron-right"></li>
+				<li><i class="fa fa-chevron-right"></i></li>
 			</ul>
 		</section>
+		</div>
 	</section>
+
 	<footer class="main-footer">
+		<div class="outer-container">
 		<div class="subscribe">
 			<h3 class="subscribe-heading">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
 			<input type="email">
@@ -219,6 +230,7 @@
 				</ul>
 			</div>
 		</footer>
+		</div>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 	<script src="js/main.js"></script>
