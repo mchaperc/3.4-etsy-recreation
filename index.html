@@ -3,9 +3,223 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Etsy Recreation</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<header class="main">
+		<div class="main-title-search-browse">
+			<h1 class="main-title">Etsy</h1>
+			<input type="search" id="keyword-search" autofocus>
+			<button class="browse">Browse <i class="fa fa-caret-down"></i></button>
+		</div>
+		<div class="main-register-signin-cart">
+			<a href="https://www.etsy.com/join?ref=hdr&from_page=https%3A%2F%2Fwww.etsy.com%2Fsearch">Register</a>
+			<button class="signin">Sign In</button>
+			<i class="fa fa-shopping-cart fa-2x"></i>
+		</div>
+	</header>
+	<section class="shop-by">
+		<h3 class="shop-by-title">Shop by "whiskey" category</h3>
+		<div class="shop-by-category">
+			<img src="" alt="">
+			<h4></h4>
+			<p></p>
+			<i class="fa fa-chevron-right"></i>
+		</div>
+		<div class="shop-by-category">
+			<img src="" alt="">
+			<h4></h4>
+			<p></p>
+			<i class="fa fa-chevron-right"></i>
+		</div>
+		<div class="shop-by-category">
+			<img src="" alt="">
+			<h4></h4>
+			<p></p>
+			<i class="fa fa-chevron-right"></i>
+		</div>
+		<div class="shop-by-category">
+			<img src="" alt="">
+			<h4></h4>
+			<p></p>
+			<i class="fa fa-chevron-right"></i>
+		</div>
+		<div class="shop-by-category">
+			<img src="" alt="">
+			<h4></h4>
+			<p></p>
+			<i class="fa fa-chevron-right"></i>
+		</div>
+	</section>
+	<section class="content">
+		<sidebar class="content-sidebar">
+			<h4 class="content-categories-title">Show results for:</h4>
+			<section class="content-categories">
+				<h4 class="content-categories-heading">All Categories</h4>
+			</section>
+			<h4 class="content-refine-title">Refine your search</h4>
+			<section class="content-refine">
+				<div class="content-type">
+					<h4 class="content-refine-heading">Item Type</h4>
+					<input type="radio" name="item-type"> All Items
+					<input type="radio" name="item-type"> <a href="https://www.etsy.com/search/handmade?q=whiskey">Handmade</a>
+					<input type="radio" name="item-type"><a href="https://www.etsy.com/search/vintage?q=whiskey">Vintage</a>
+					<hr width="100%">
+				</div>
+				<div class="content-price">
+					<h4 class="content-refine-price">Price</h4>
+					<input type="number" placeholder="Low"> 
+					<p>to</p>
+					<input type="number" placeholder="Low">
+					<button class="content-price-submit"><i class="fa fa-caret-right"></i></button>
+					<hr width="100%">
+				</div>
+				<div class="content-color">
+					<h4 class="content-color-heading">Filter by Color</h4>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<div class="content-color-option"></div>
+					<hr width="100%">
+				</div>
+				<div class="content-options">
+					<h4 class="content-options-heading">Ordering Options</h4>
+					<input type="checkbox"><a href="https://www.etsy.com/search?q=whiskey&gift_card=true">Accepts Etsy Gift Cards</a>
+					<input type="checkbox"><a href="https://www.etsy.com/search?q=whiskey&customizable=true">Customizable</a>
+					<hr width="100%">
+				</div>
+				<div class="content-ship-to">
+					<h4 class="content-ship-to-heading">Ship To</h4>
+					<select name="country" id="">
+						<option value="US">United States</option>
+						<option value="MX">Mexico</option>
+						<option value="UK">United Kingdom</option>
+						<option value="GERM">Germany</option>
+						<option value="Yugo">Yugoslavia</option>
+					</select>
+				</div>
+			</section>
+		</sidebar>
+		<section class="content-results">
+			<div class="content-results-category-tree">
+				<a href="https://www.etsy.com/search?q=whiskey">All Categories <i class="fa fa-chevron-right"></i></i></a>
+				<p class="content-results-category"><span>"whiskey"</span> (21,935 Results)</p>
+			</div>
+			<div class="content-results-sort">
+					<p>Sort by: </p>
+					<button class="content-results-sort-button">Relevancy <i class="fa fa-caret-down"></i></button>
+			</div>
+			<div class="content-results-result">
+				<img src="https://img1.etsystatic.com/017/0/7021741/il_570xN.565484417_fg5h.jpg" alt="">
+				<h3 class="content-results-result-name">WHISKEY SUGAR - Shaving Cream...</h3>
+				<p class="content-results-result-company">QueenBee TradingCo</p>
+				<p class="content-results-result-price">$9.00 USD</p>
+			</div>
+			<p class="content-related-categories">Related to <span>whiskey</span></p>
+			<ul class="content-related-categories-links">
+				<li><a href="https://www.etsy.com/search?q=whiskey+decanter&ref=related">whiskey decanter</a></li>
+				<li><a href="https://www.etsy.com/search?q=whiskey+glass&ref=related">whiskey glass</a></li>
+				<li><a href="https://www.etsy.com/search?q=whiskey+barrel&ref=related">whiskey barrel</a></li>
+				<li><a href="https://www.etsy.com/search?q=bourbon&ref=related">bourbon</a></li>
+				<li><a href="https://www.etsy.com/search?q=whiskey+shirt&ref=related">whiskey shirt</a></li>
+				<li><a href="https://www.etsy.com/search?q=jack+daniels&ref=related">jack daniels</a></li>
+				<li><a href="https://www.etsy.com/search?q=scotch&ref=related">scotch</a></li>
+				<li><a href="https://www.etsy.com/search?q=beer&ref=related">beer</a></li>
+				<li><a href="https://www.etsy.com/search?q=cigar&ref=related">cigar</a></li>
+				<li><a href="https://www.etsy.com/search?q=flask&ref=related">flask</a></li>
+			</ul>
+			<p>Looking for shops? <a href="https://www.etsy.com/shop/whiskeynweddingbells?ref=shop_name_search_sugg">whiskeynweddingbells</a>, <a href="https://www.etsy.com/shop/WhiskeyDogWares?ref=shop_name_search_sugg">WhiskeyDogWares</a>, <a href="https://www.etsy.com/shop/WhiskeysWhims?ref=shop_name_search_sugg">Whiskey Whims.</a> <a href="https://www.etsy.com/search/shops?q=whiskey&search_type=shops&search_query=whiskey">See more.</a></p>
+			<ul class="content-pages">
+				<li><i class="fa fa-chevron-left"></i></li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+				<li>8</li>
+				<li>...</li>
+				<li>250</li>
+				<li><i class="fa fa-chevron-right"></li>
+			</ul>
+		</section>
+	</section>
+	<footer class="main-footer">
+		<div class="subscribe">
+			<h3 class="subscribe-heading">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</h3>
+			<input type="email">
+			<input type="submit" value="Subscribe">
+		</div>
+		<section class="main-footer-links">
+			<div class="open-a-shop">
+				<p>Turn Your Passion Into a Business</p>
+				<button class="shop-create">Open a Shop</button>
+				<br>
+				<p>Sell on Etsy</p>
+				<a href="https://www.etsy.com/seller-handbook/?ref=ftr">Seller Handbook</a>
+				<a href="https://www.etsy.com/reader?ref=ftr">Etsy Credit Card Reader</a>
+			</div>
+			<div class="community">
+				<p>Join the Community</p>
+				<a href="https://www.etsy.com/teams/?ref=ftr">Teams</a>
+				<a href="https://www.etsy.com/forums/?ref=ftr">Forums</a>
+				<a href="https://www.etsy.com/community/events/?ref=ftr">Upcoming Events</a>
+				<a href="https://www.etsy.com/affiliates?ref=ftr">Affiliates</a>
+			</div>
+			<div class="discover">
+				<p>Discover and Shop</p>
+				<a href="https://www.etsy.com/giftcards/?ref=ftr">Gift Cards</a>
+				<a href="https://blog.etsy.com/en/?ref=ftr">Blog</a>
+				<a href="https://www.etsy.com/pages/?ref=ftr">Tastemakers</a>
+				<a href="https://www.etsy.com/mobile/?ref=ftr">Mobile Apps</a>
+				<a href="https://www.etsy.com/registry/?ref=ftr">Gift Registries</a>
+				<a href="https://www.etsy.com/wholesale?ref=ftr">Wholesale</a>
+				<a href="https://www.etsy.com/search?ref=ftr">Search</a>
+				<a href="https://www.etsy.com/etsy-finds/?ref=ftr">Etsy Finds</a>
+			</div>
+			<div class="about-us">
+				<p>Get to Know Us</p>
+				<a href="https://www.etsy.com/about/?ref=ftr"></a>
+				<a href="https://www.etsy.com/careers/?ref=ftr"></a>
+				<a href="https://www.etsy.com/press/?ref=ftr"></a>
+				<a href="https://www.etsy.com/developers/?ref=ftr"></a>
+				<a href="http://investors.etsy.com/phoenix.zhtml?c=253952&p=irol-IRHome"></a>
+			</div>
+			<div class="social">
+				<p>Follow Etsy</p>
+				<a href="https://www.facebook.com/Etsy"><i class="fa fa-facebook"></i>Facebook</a>
+				<a href="https://twitter.com/etsy/"><i class="fa fa-twitter"></i>Twitter</a>
+				<a href="https://www.pinterest.com/etsy/"><i class="fa fa-pinterest"></i>Pinterest</a>
+				<a href="https://instagram.com/etsy/"><i class="fa fa-instagram"></i>Instagram</a>
+			</div>
+		</section>
+		<footer class="footer-footer">
+			<div class="footer-buttons">
+				<ul>
+					<li><button class="country"><i class="fa fa-globe"></i> United States</button></li>
+					<li><button class="language">English (US)</button></li>
+					<li><button class="currency">$ USD</button></li>
+				</ul>
+				<button class="help">Help</button>
+			</div>
+			<div class="footer-fine-print">
+				<ul>
+					<li>&copy; 2015 Etsy, Inc.</li>
+					<li><a href="https://www.etsy.com/help/article/479/?ref=ftr">Terms</a></li>
+					<li><a href="https://www.etsy.com/help/article/480/?ref=ftr">Privacy</a></li>
+					<li><a href="https://www.etsy.com/help/article/482/?ref=ftr">Copyright</a></li>
+					<li><a href="https://www.etsy.com/help/article/3293?ref=ftr">Internet-based Ads</a></li>
+				</ul>
+			</div>
+		</footer>
+	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 	<script src="js/main.js"></script>
 </body>
