@@ -23,6 +23,15 @@ body {
 
 a {
 	text-decoration: none;
+	color: rgb(22, 146, 179);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(22,146,179);
 }
 
 img {
@@ -123,6 +132,10 @@ form {
 	color: rgb(22, 146, 179);
 	margin-right: 1.2em;
 	font-size: .9em;
+}
+
+.main-register-signin-cart a {
+	color: rgb(22, 146, 179);
 }
 
 .signin {
@@ -272,6 +285,10 @@ Sidebar Styling
 	color: black;
 }
 
+.content-categories a:first-child:visited {
+	color: black;
+}
+
 .content-refine-heading {
 	margin-bottom: .5em;
 }
@@ -380,7 +397,184 @@ Results Styling
 Footer Styling
 **************************/
 
+$grid-columns: 10;
+
+footer {
+	background-color: rgb(245, 245, 241);
+	padding-top: 2em;
+}
+
+.footer-outer-container {
+	@include outer-container(980px);
+}
+
 .subscribe {
 	border: 8px solid rgb(239, 239, 235);
 	border-radius: 5px;
+	margin-bottom: 2em;
+	padding: 1.5em;
+	text-align: center;
+}
+
+.subscribe-heading {
+	margin-bottom: .6em;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+input[type="email"] {
+	padding:8px 15px;
+    border: 1px solid rgb(207, 203, 200);
+    border-radius: 3px;
+    width: 250px;
+    font-size: 1em;
+}
+
+.subscribe input[type="submit"] {
+	padding:8px 15px;
+	color: white;
+	background-color: rgb(59, 168, 194);
+    border-radius: 3px;
+    border: 1px solid rgb(56, 152, 175);
+    font-size: 1em;	
+}
+
+.subscribe input[type="submit"]:hover {
+	background-color: rgb(71, 176, 201);
+	cursor: pointer;
+}
+
+.main-footer-links {
+	@include clearfix;
+	border-bottom: 1px solid rgb(225,227,223);
+	padding-bottom: 2em;
+}
+
+.main-footer-links div {
+	@include span-columns(2);
+	font-size: .85em;
+	line-height: 2em;
+}
+
+.main-footer-links a {
+	display: block;
+}
+
+.main-footer-links i {
+	font-size: 1.2em;
+	vertical-align: middle;
+	margin-right: .3em;
+}
+
+.main-footer-links div:first-child p {
+	line-height: 1.5em;
+}
+
+.shop-create {
+	background: linear-gradient(0deg, rgb(71, 176, 201) 95%, rgb(154, 208, 223));
+	border: 1px solid rgb(56, 152, 175);
+	border-radius: 3px;
+	color: white;
+	font-size: 1em;
+	margin: .5em 0 1.5em .1em;
+	padding: .3em;
+}
+
+.shop-create:hover {
+	background-color: rgb(59, 168, 194);
+	cursor: pointer;
+}
+
+.footer-footer {
+	margin-top: 1em;
+}
+
+.footer-buttons {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.footer-buttons i {
+	font-size: 1.5em;
+}
+
+.footer-buttons li, .footer-buttons ul, .help {
+	display: inline-block;
+}
+
+.footer-buttons ul button {
+	background-color: rgb(245, 245, 241);
+	border: none;
+	border-top: 1px solid rgb(226, 226, 226);
+	border-bottom: 1px solid rgb(226, 226, 226);
+	border-left: 1px solid rgb(226, 226, 226);
+	border-radius: 0;
+	color: rgb(125, 119, 115);
+	font-size: .75em;
+	padding: .9em .5em;
+}
+
+.footer-buttons ul .country {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: .7em .4em .9em .4em;
+	position: relative;
+	top: 1px;
+}
+
+.footer-buttons ul .currency {
+	border-right: 1px solid rgb(226, 226, 226);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;	
+}
+
+.footer-buttons button:hover {
+	background-color: rgb(205, 233, 240);
+	color: rgb(22, 146, 179);
+	cursor: pointer;
+}
+
+.help {
+	background: linear-gradient(0deg, rgb(243, 243, 242) 95%, white);
+	border: 1px solid rgb(216, 213, 210);
+	border-radius: 3px;
+	color: rgb(125, 119, 115);
+	font-size: .9em;
+	font-weight: bold;
+	margin-left: 1.5em;
+	padding: .65em 4em;
+	vertical-align: middle;
+}
+
+.footer-buttons button.help:hover {
+	background: linear-gradient(0deg, rgb(235, 235, 234) 95%, white);
+	color: rgb(125, 119, 115);
+}
+
+.footer-fine-print {
+	font-size: .75em;
+	margin: auto;
+	margin-bottom: 2em;
+	text-align: center;
+	width: 70%;
+}
+
+.footer-fine-print li {
+	display: inline-block;
+	margin-right: 1.5em;
+}
+
+.footer-fine-print li:first-child {
+	color: rgb(155, 155, 155);
+}
+
+.footer-fine-print a {
+	color: rgb(102, 102, 102);
+}
+
+.footer-fine-print a:visited {
+	color: rgb(102, 102, 102);
 }
