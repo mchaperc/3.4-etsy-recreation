@@ -9,6 +9,10 @@ General Styling
 	box-sizing: border-box;
 }
 
+body {
+	font-family: sans-serif;
+}
+
 .outer-container {
 	@include outer-container(980px);
 }
@@ -19,6 +23,10 @@ General Styling
 
 a {
 	text-decoration: none;
+}
+
+img {
+	height: 148px;
 }
 
 /**************************
@@ -96,6 +104,7 @@ form {
 	display: inline-block;
 	color: rgb(242, 88, 29);
 	font-size: 2.5em;
+	font-family: serif;
 }
 
 .main-register-signin-cart {
@@ -144,17 +153,72 @@ form {
 Shop by category Styling
 ***************************/
 
+$grid-columns: 10;
+
 .shop-by {
 	background-color: rgb(235, 235, 230);
+	height: 320px;
+	padding-top: 3%;
+}
+
+.shop-by-title {
+	font-size: 1.3em;
+	padding-bottom: .8em;
+	font-family: serif;
+}
+
+.shop-by-category img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 100%;
+}
+
+.shop-by-category {
+	position: relative;
+	display: inline-block;
+	@include span-columns(2);
+	background-color: white;
+	height: 205px;
+	font-family: sans-serif;
+}
+
+.shop-by-category h4,
+.shop-by-category p,
+.shop-by-category i {
+	position: absolute;
+}
+
+.shop-by-category h4 {
+	bottom: 15%;
+	left: 5%;
+	font-size: .9em;
+}
+
+.shop-by-category p {
+	bottom: 5%;
+	left: 5%;
+	font-size: .8em;
+	color: rgb(136, 136, 136);
+}
+
+.shop-by-category i {
+	bottom: 10%;
+	right: 5%;
 }
 
 /**************************
 Content Styling
 **************************/
 
+$grid-columns: 12;
+
 .content {
 	background-color: rgb(245, 245, 241);
 	border-bottom: 2px solid rgb(226, 226, 226);
+	padding-top: 1em;
 }
 
 /**************************
@@ -162,12 +226,155 @@ Sidebar Styling
 **************************/
 
 .content-sidebar {
+	@include span-columns(3);
+}
+
+.content-categories-title,
+.content-refine-title {
+	margin-bottom: .8em;
+	display: block;
+	margin-top: 1em;
+}
+
+.content-categories,
+.content-refine {
 	background-color: white;
+	padding: .8em;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 3px;
+}
+
+.content-type,
+.content-price,
+.content-color,
+.content-options {
+	border-bottom: 1px solid rgb(225,227,223);
+	padding-bottom: 1.2em;
+	margin-bottom: 1em;
+}
+
+.content-sidebar h4 {
+	font-size: .85em;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.content-sidebar a {
+	font-size: .85em;
+}
+
+.content-categories a:first-child {
+	color: black;
+	font-size: 100%;
+}
+
+.content-categories a:first-child:hover {
+	color: black;
+}
+
+.content-refine-heading {
+	margin-bottom: .5em;
+}
+
+.content input[type=radio] {
+	height: 2.5em;
+	width: 2.5em;
+	margin-bottom: .1em;
+	margin-right: 0;
+	vertical-align: middle;
+}
+
+.content-price input {
+	display: inline-block;
+	width: 33.5%;
+	font-size: .9em;
+	padding: .7em;
+	text-align: center;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 3px;
+	margin-right: 5px;
+}
+
+.content-price p {
+	display: inline-block;
+	margin-right: 5px;
+	width: 5%;
+}
+
+.content-price-submit {
+	padding: .7em .9em;
+	vertical-align: top;
+	background-color: white;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+}
+
+.content-price-submit:hover {
+	background-color: rgb(245,245,241);
+	cursor: pointer;
+}
+
+.content-color div {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+}
+
+.content-color div:hover {
+	cursor: pointer;
+}
+
+.content-color-option-red {
+	background-color: rgb(241, 20, 57); 
+}
+
+.content-color-option-orange {
+	background-color: rgb(255, 127, 0);
+}
+
+.content-color-option-yellow {
+	background-color: rgb(243, 204, 12);
+}
+
+.content-color-option-green {
+	background-color: rgb(32, 192, 36);
+}
+
+.content-color-option-blue {
+	background-color: rgb(38, 204, 241);
+}
+
+.content-color-option-purple {
+	background-color: rgb(166, 12, 243);
+}
+
+.content-color-option-black {
+	background-color: rgb(0, 0, 0);
+}
+
+.content-color-option-white {
+	background-color: rgb(255,255,255);
+}
+
+.content-options input {
+	margin-bottom: .8em;
+	margin-right: .5em;
+}
+
+.content-ship-to select {
+	background-color: white;
+	font-size: 1em;
 }
 
 /**************************
 Results Styling
 **************************/
+
+.content-results {
+	@include span-columns(9);
+}
 
 /**************************
 Footer Styling

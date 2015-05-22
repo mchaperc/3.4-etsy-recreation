@@ -12,6 +12,9 @@ General Styling
 *, *::before, *::after {
   box-sizing: border-box; }
 
+body {
+  font-family: sans-serif; }
+
 .outer-container {
   max-width: 980px;
   margin-left: auto;
@@ -26,6 +29,9 @@ General Styling
 
 a {
   text-decoration: none; }
+
+img {
+  height: 148px; }
 
 /**************************
 Header Styling
@@ -93,7 +99,8 @@ form {
 .main-title {
   display: inline-block;
   color: #f2581d;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  font-family: serif; }
 
 .main-register-signin-cart {
   float: right;
@@ -134,24 +141,200 @@ form {
 Shop by category Styling
 ***************************/
 .shop-by {
-  background-color: #ebebe6; }
+  background-color: #ebebe6;
+  height: 320px;
+  padding-top: 3%; }
+
+.shop-by-title {
+  font-size: 1.3em;
+  padding-bottom: .8em;
+  font-family: serif; }
+
+.shop-by-category img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%; }
+
+.shop-by-category {
+  position: relative;
+  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 17.72593%;
+  background-color: white;
+  height: 205px;
+  font-family: sans-serif; }
+  .shop-by-category:last-child {
+    margin-right: 0; }
+
+.shop-by-category h4,
+.shop-by-category p,
+.shop-by-category i {
+  position: absolute; }
+
+.shop-by-category h4 {
+  bottom: 15%;
+  left: 5%;
+  font-size: .9em; }
+
+.shop-by-category p {
+  bottom: 5%;
+  left: 5%;
+  font-size: .8em;
+  color: #888888; }
+
+.shop-by-category i {
+  bottom: 10%;
+  right: 5%; }
 
 /**************************
 Content Styling
 **************************/
 .content {
   background-color: #f5f5f1;
-  border-bottom: 2px solid #e2e2e2; }
+  border-bottom: 2px solid #e2e2e2;
+  padding-top: 1em; }
 
 /**************************
 Sidebar Styling
 **************************/
 .content-sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .content-sidebar:last-child {
+    margin-right: 0; }
+
+.content-categories-title,
+.content-refine-title {
+  margin-bottom: .8em;
+  display: block;
+  margin-top: 1em; }
+
+.content-categories,
+.content-refine {
+  background-color: white;
+  padding: .8em;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px; }
+
+.content-type,
+.content-price,
+.content-color,
+.content-options {
+  border-bottom: 1px solid #e1e3df;
+  padding-bottom: 1.2em;
+  margin-bottom: 1em; }
+
+.content-sidebar h4 {
+  font-size: .85em;
+  font-weight: bold;
+  margin-bottom: .5em; }
+
+.content-sidebar a {
+  font-size: .85em; }
+
+.content-categories a:first-child {
+  color: black;
+  font-size: 100%; }
+
+.content-categories a:first-child:hover {
+  color: black; }
+
+.content-refine-heading {
+  margin-bottom: .5em; }
+
+.content input[type=radio] {
+  height: 2.5em;
+  width: 2.5em;
+  margin-bottom: .1em;
+  margin-right: 0;
+  vertical-align: middle; }
+
+.content-price input {
+  display: inline-block;
+  width: 33.5%;
+  font-size: .9em;
+  padding: .7em;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  margin-right: 5px; }
+
+.content-price p {
+  display: inline-block;
+  margin-right: 5px;
+  width: 5%; }
+
+.content-price-submit {
+  padding: 0.7em 0.9em;
+  vertical-align: top;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px; }
+
+.content-price-submit:hover {
+  background-color: #f5f5f1;
+  cursor: pointer; }
+
+.content-color div {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px; }
+
+.content-color div:hover {
+  cursor: pointer; }
+
+.content-color-option-red {
+  background-color: #f11439; }
+
+.content-color-option-orange {
+  background-color: #ff7f00; }
+
+.content-color-option-yellow {
+  background-color: #f3cc0c; }
+
+.content-color-option-green {
+  background-color: #20c024; }
+
+.content-color-option-blue {
+  background-color: #26ccf1; }
+
+.content-color-option-purple {
+  background-color: #a60cf3; }
+
+.content-color-option-black {
+  background-color: black; }
+
+.content-color-option-white {
   background-color: white; }
+
+.content-options input {
+  margin-bottom: .8em;
+  margin-right: .5em; }
+
+.content-ship-to select {
+  background-color: white;
+  font-size: 1em; }
 
 /**************************
 Results Styling
 **************************/
+.content-results {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .content-results:last-child {
+    margin-right: 0; }
+
 /**************************
 Footer Styling
 **************************/
