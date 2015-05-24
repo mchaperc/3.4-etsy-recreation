@@ -232,6 +232,7 @@ $grid-columns: 12;
 	background-color: rgb(245, 245, 241);
 	border-bottom: 2px solid rgb(226, 226, 226);
 	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 /**************************
@@ -391,6 +392,145 @@ Results Styling
 
 .content-results {
 	@include span-columns(9);
+	font-size: 1.3em;
+	padding-bottom: .8em;
+	font-family: serif;
+}
+
+.content-results-category-tree {
+	width: 50%;
+	display: inline-block;
+}
+
+.content-results-category-tree a,
+.content-results-category-tree p {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: .65em;
+}
+
+.content-results-category-tree i {
+	font-size: .5em;
+	vertical-align: middle;
+}
+
+.content-results-category-tree i,
+.content-results-category-tree p {
+	color: rgb(85, 85, 85);
+}
+
+.content-results-placeholder {
+	@include span-columns(9 of 9);
+	margin-top: 1em;
+}
+
+.content-results-sort {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.content-results-sort p,
+.content-results-sort button {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: .65em;
+}
+
+.content-results-result img {
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 77%;
+}
+
+.content-results-result {
+	border-radius: 3px;
+	position: relative;
+	@include span-columns(3 of 9);
+	background-color: white;
+	height: 235px;
+	margin-bottom: 1em;
+	font-family: sans-serif;
+	@include omega(3n);
+}
+
+.content-results-result:hover {
+	box-shadow: 0 0 3px rgba(0,0,0,.4);
+}
+
+.content-results-result:hover .heart,
+.content-results-result:hover .register-signin {
+	visibility: visible;
+}
+
+.content-results-result .heart,
+.content-results-result .register-signin {
+	visibility: hidden;
+	position: absolute;
+	color: lightgray;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	padding: .15em;
+	top: 2%;
+	text-align: center;
+}
+
+.heart {
+	right: 17%;
+}
+
+.register-signin {
+	right: 2.5%;
+}
+
+.heart:hover,
+.register-signin:hover {
+	color: gray;
+	cursor: pointer;
+	border-color: gray;
+}
+
+.content-results-result .fa {
+	font-size: .7em;
+}
+
+.content-results-result h4,
+.content-results-result p.shop-name,
+.content-results-result p.result-price {
+	position: absolute;
+}
+
+.content-results-result h4 {
+	bottom: 10%;
+	left: 3%;
+	font-size: .6em;
+}
+
+.content-results-result p.shop-name {
+	bottom: 2%;
+	left: 3%;
+	font-size: .55em;
+	color: rgb(136, 136, 136);
+}
+
+.content-results-result p.result-price {
+	bottom: 2%;
+	color: rgb(122, 190, 74);
+	right: 3%;
+	font-size: .6em;
+}
+
+.content-footer {
+	@include clearfix;
 }
 
 /**************************
@@ -451,7 +591,7 @@ input[type="email"] {
 	padding-bottom: 2em;
 }
 
-.main-footer-links div {
+.main-footer-links > div {
 	@include span-columns(2);
 	font-size: .85em;
 	line-height: 2em;

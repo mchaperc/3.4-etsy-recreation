@@ -207,7 +207,8 @@ Content Styling
 .content {
   background-color: #f5f5f1;
   border-bottom: 2px solid #e2e2e2;
-  padding-top: 1em; }
+  padding-top: 1em;
+  padding-bottom: 2em; }
 
 /**************************
 Sidebar Styling
@@ -344,9 +345,142 @@ Results Styling
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 74.41059%;
+  font-size: 1.3em;
+  padding-bottom: .8em;
+  font-family: serif; }
   .content-results:last-child {
     margin-right: 0; }
+
+.content-results-category-tree {
+  width: 50%;
+  display: inline-block; }
+
+.content-results-category-tree a,
+.content-results-category-tree p {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: .65em; }
+
+.content-results-category-tree i {
+  font-size: .5em;
+  vertical-align: middle; }
+
+.content-results-category-tree i,
+.content-results-category-tree p {
+  color: #555555; }
+
+.content-results-placeholder {
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 100%;
+  margin-top: 1em; }
+  .content-results-placeholder:last-child {
+    margin-right: 0; }
+
+.content-results-sort {
+  width: 50%;
+  float: right;
+  text-align: right; }
+
+.content-results-sort p,
+.content-results-sort button {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: .65em; }
+
+.content-results-result img {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 77%; }
+
+.content-results-result {
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 3.16844%;
+  width: 31.22104%;
+  background-color: white;
+  height: 235px;
+  margin-bottom: 1em;
+  font-family: sans-serif; }
+  .content-results-result:last-child {
+    margin-right: 0; }
+  .content-results-result:nth-child(3n) {
+    margin-right: 0; }
+  .content-results-result:nth-child(3n+1) {
+    clear: left; }
+
+.content-results-result:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4); }
+
+.content-results-result:hover .heart,
+.content-results-result:hover .register-signin {
+  visibility: visible; }
+
+.content-results-result .heart,
+.content-results-result .register-signin {
+  visibility: hidden;
+  position: absolute;
+  color: lightgray;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: .15em;
+  top: 2%;
+  text-align: center; }
+
+.heart {
+  right: 17%; }
+
+.register-signin {
+  right: 2.5%; }
+
+.heart:hover,
+.register-signin:hover {
+  color: gray;
+  cursor: pointer;
+  border-color: gray; }
+
+.content-results-result .fa {
+  font-size: .7em; }
+
+.content-results-result h4,
+.content-results-result p.shop-name,
+.content-results-result p.result-price {
+  position: absolute; }
+
+.content-results-result h4 {
+  bottom: 10%;
+  left: 3%;
+  font-size: .6em; }
+
+.content-results-result p.shop-name {
+  bottom: 2%;
+  left: 3%;
+  font-size: .55em;
+  color: #888888; }
+
+.content-results-result p.result-price {
+  bottom: 2%;
+  color: #7abe4a;
+  right: 3%;
+  font-size: .6em; }
+
+.content-footer::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 /**************************
 Footer Styling
@@ -404,14 +538,14 @@ input[type="email"] {
     content: "";
     display: table; }
 
-.main-footer-links div {
+.main-footer-links > div {
   float: left;
   display: block;
   margin-right: 2.84259%;
   width: 17.72593%;
   font-size: .85em;
   line-height: 2em; }
-  .main-footer-links div:last-child {
+  .main-footer-links > div:last-child {
     margin-right: 0; }
 
 .main-footer-links a {

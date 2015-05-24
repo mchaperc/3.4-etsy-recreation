@@ -66,6 +66,7 @@
 			<h4 class="content-categories-title">Show results for:</h4>
 			<section class="content-categories">
 				<a href="https://www.etsy.com/search?q=whiskey"><h4 class="content-categories-heading">All Categories</h4></a>
+				<ul class="content-categories-results-placeholder"></ul>
 			</section>
 			<br>
 			<h4 class="content-refine-title">Refine your search</h4>
@@ -114,19 +115,15 @@
 		</sidebar>
 		<section class="content-results">
 			<div class="content-results-category-tree">
-				<a href="https://www.etsy.com/search?q=whiskey">All Categories <i class="fa fa-chevron-right"></i></i></a>
+				<a href="https://www.etsy.com/search?q=whiskey">All Categories</a> <i class="fa fa-chevron-right"></i> 
 				<p class="content-results-category"><span>"whiskey"</span> (21,935 Results)</p>
 			</div>
 			<div class="content-results-sort">
 					<p>Sort by: </p>
 					<button class="content-results-sort-button">Relevancy <i class="fa fa-caret-down"></i></button>
 			</div>
-			<div class="content-results-result">
-				<img src="https://img1.etsystatic.com/017/0/7021741/il_570xN.565484417_fg5h.jpg" alt="">
-				<h3 class="content-results-result-name">WHISKEY SUGAR - Shaving Cream...</h3>
-				<p class="content-results-result-company">QueenBee TradingCo</p>
-				<p class="content-results-result-price">$9.00 USD</p>
-			</div>
+			<div class="content-results-placeholder"></div>
+			<div class="content-footer">
 			<p class="content-related-categories">Related to <span>whiskey</span></p>
 			<ul class="content-related-categories-links">
 				<li><a href="https://www.etsy.com/search?q=whiskey+decanter&ref=related">whiskey decanter</a></li>
@@ -155,6 +152,7 @@
 				<li>250</li>
 				<li><i class="fa fa-chevron-right"></i></li>
 			</ul>
+			</div>	
 		</section>
 		</div>
 	</section>
@@ -231,6 +229,18 @@
 		</div>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script id="expressions-template" type="text/x-handlebars-template">
+		{{#each results}}
+		<div class="content-results-result">
+			<a href="{{url}}"><img src="{{productImage}}" alt="{{title}}"></a>
+			<div class="heart"><i class="fa fa-heart"></i></div>
+			<div class="register-signin"><i class="fa fa-list"></i></div>
+			<h4>{{checkTitle title}}</h4>
+			<p class="shop-name">{{checkShop Shop.shop_name}}</p>
+			<p class="result-price">${{price}} USD</p>
+		</div>
+		{{/each}}
+	</script>
 	<script src="js/main.js"></script>
 </body>
 </html>
