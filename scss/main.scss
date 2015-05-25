@@ -1,0 +1,720 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+/**************************
+General Styling
+**************************/
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.outer-container {
+	@include outer-container(980px);
+}
+
+* {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(22, 146, 179);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(22,146,179);
+}
+
+img {
+	height: 148px;
+}
+
+/**************************
+Header Styling
+**************************/
+
+header {
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 3px rgba(0,0,0,.6);
+	position: relative;
+}
+
+.main-title-search-browse,
+.main-register-signin-cart {
+	display: inline-block;
+	height: 72px;
+	padding: .7em 0; 
+}
+
+.main-title-search-browse {
+	width: 80%;
+}
+
+form {
+	display: inline-block;
+	vertical-align: middle;
+	height: 45px;
+    width: 300px;
+    margin-left: 1em;
+}
+
+#keyword-search {
+                padding:8px 15px;
+                border: 1px solid rgb(207, 203, 200);
+                border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px;
+                width: 220px;
+}
+.search-button {
+                position:relative;
+                padding: 6px 9px;
+                left:-6px;
+                top: 1px;
+                font-size: .9em;
+                font-weight: bold;
+                border: 1px solid rgb(52, 150, 175);
+                background-color: rgb(59, 168, 194);
+                color:#fafafa;
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
+}
+.search-button:hover  {
+                background-color:#fafafa;
+                color:rgb(52, 150, 175);
+                cursor: pointer;
+}
+
+.browse {
+	font-size: .8em;
+	background-color: white;
+	position: relative;
+	top: -5px;
+	padding: .55em;
+	border-radius: 3px;
+	border: 1px solid rgb(230, 230, 230);
+}
+
+.browse:hover {
+	cursor: pointer;
+	border-color: rgb(190,190,190);
+}
+
+.main-title {
+	display: inline-block;
+	color: rgb(242, 88, 29);
+	font-size: 2.5em;
+	font-family: serif;
+}
+
+.main-register-signin-cart {
+	float: right;
+	font-family: sans-serif;
+	margin-top: .4em;
+}
+
+.main-register-signin-cart a, 
+.main-register-signin-cart .signin,
+.fa-shopping-cart {
+	vertical-align: middle;
+}
+
+.main-register-signin-cart a {
+	color: rgb(22, 146, 179);
+	margin-right: 1.2em;
+	font-size: .9em;
+}
+
+.main-register-signin-cart a {
+	color: rgb(22, 146, 179);
+}
+
+.signin {
+	border: 1px solid rgb(22, 146, 179);
+	color: rgb(22, 146, 179);
+	background-color: white;
+	font-size: .8em;
+	padding: .6em;
+	border-radius: 3px;
+}
+
+.signin:hover {
+	background-color: rgb(240, 251, 253);
+	cursor: pointer;
+}
+
+.fa-shopping-cart {
+	padding-left: .3em;
+	margin-left: .3em;
+	border-left: 1px solid rgb(235, 235, 230);
+}
+
+.fa-shopping-cart:hover {
+	cursor: pointer;
+}
+
+/***************************
+Shop by category Styling
+***************************/
+
+$grid-columns: 10;
+
+.shop-by {
+	background-color: rgb(235, 235, 230);
+	height: 320px;
+	padding-top: 3%;
+}
+
+.shop-by-title {
+	font-size: 1.3em;
+	padding-bottom: .8em;
+	font-family: serif;
+}
+
+.shop-by-category img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 100%;
+}
+
+.shop-by-category {
+	position: relative;
+	display: inline-block;
+	@include span-columns(2);
+	background-color: white;
+	height: 205px;
+	font-family: sans-serif;
+}
+
+.shop-by-category h4,
+.shop-by-category p,
+.shop-by-category i {
+	position: absolute;
+}
+
+.shop-by-category h4 {
+	bottom: 15%;
+	left: 5%;
+	font-size: .9em;
+}
+
+.shop-by-category p {
+	bottom: 5%;
+	left: 5%;
+	font-size: .8em;
+	color: rgb(136, 136, 136);
+}
+
+.shop-by-category i {
+	bottom: 10%;
+	right: 5%;
+}
+
+/**************************
+Content Styling
+**************************/
+
+$grid-columns: 12;
+
+.content {
+	background-color: rgb(245, 245, 241);
+	border-bottom: 2px solid rgb(226, 226, 226);
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+/**************************
+Sidebar Styling
+**************************/
+
+.content-sidebar {
+	@include span-columns(3);
+}
+
+.content-categories-title,
+.content-refine-title {
+	margin-bottom: .8em;
+	display: block;
+	margin-top: 1em;
+}
+
+.content-categories,
+.content-refine {
+	background-color: white;
+	padding: .8em;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 3px;
+}
+
+.content-type,
+.content-price,
+.content-color,
+.content-options {
+	border-bottom: 1px solid rgb(225,227,223);
+	padding-bottom: 1.2em;
+	margin-bottom: 1em;
+}
+
+.content-sidebar h4 {
+	font-size: .85em;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.content-sidebar a {
+	font-size: .85em;
+}
+
+.content-categories a:first-child {
+	color: black;
+	font-size: 100%;
+}
+
+.content-categories a:first-child:hover {
+	color: black;
+}
+
+.content-categories a:first-child:visited {
+	color: black;
+}
+
+.content-refine-heading {
+	margin-bottom: .5em;
+}
+
+.content input[type=radio] {
+	height: 2.5em;
+	width: 2.5em;
+	margin-bottom: .1em;
+	margin-right: 0;
+	vertical-align: middle;
+}
+
+.content-price input {
+	display: inline-block;
+	width: 33.5%;
+	font-size: .9em;
+	padding: .7em;
+	text-align: center;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 3px;
+	margin-right: 5px;
+}
+
+.content-price p {
+	display: inline-block;
+	margin-right: 5px;
+	width: 5%;
+}
+
+.content-price-submit {
+	padding: .7em .9em;
+	vertical-align: top;
+	background-color: white;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+}
+
+.content-price-submit:hover {
+	background-color: rgb(245,245,241);
+	cursor: pointer;
+}
+
+.content-color div {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+}
+
+.content-color div:hover {
+	cursor: pointer;
+}
+
+.content-color-option-red {
+	background-color: rgb(241, 20, 57); 
+}
+
+.content-color-option-orange {
+	background-color: rgb(255, 127, 0);
+}
+
+.content-color-option-yellow {
+	background-color: rgb(243, 204, 12);
+}
+
+.content-color-option-green {
+	background-color: rgb(32, 192, 36);
+}
+
+.content-color-option-blue {
+	background-color: rgb(38, 204, 241);
+}
+
+.content-color-option-purple {
+	background-color: rgb(166, 12, 243);
+}
+
+.content-color-option-black {
+	background-color: rgb(0, 0, 0);
+}
+
+.content-color-option-white {
+	background-color: rgb(255,255,255);
+}
+
+.content-options input {
+	margin-bottom: .8em;
+	margin-right: .5em;
+}
+
+.content-ship-to select {
+	background-color: white;
+	font-size: 1em;
+}
+
+/**************************
+Results Styling
+**************************/
+
+.content-results {
+	@include span-columns(9);
+	font-size: 1.3em;
+	padding-bottom: .8em;
+	font-family: serif;
+}
+
+.content-results-category-tree {
+	width: 50%;
+	display: inline-block;
+}
+
+.content-results-category-tree a,
+.content-results-category-tree p {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: .65em;
+}
+
+.content-results-category-tree i {
+	font-size: .5em;
+	vertical-align: middle;
+}
+
+.content-results-category-tree i,
+.content-results-category-tree p {
+	color: rgb(85, 85, 85);
+}
+
+.content-results-placeholder {
+	@include span-columns(9 of 9);
+	margin-top: 1em;
+}
+
+.content-results-sort {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.content-results-sort p,
+.content-results-sort button {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: .65em;
+}
+
+.content-results-result img {
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 77%;
+}
+
+.content-results-result {
+	border-radius: 3px;
+	position: relative;
+	@include span-columns(3 of 9);
+	background-color: white;
+	height: 235px;
+	margin-bottom: 1em;
+	font-family: sans-serif;
+	@include omega(3n);
+}
+
+.content-results-result:hover {
+	box-shadow: 0 0 3px rgba(0,0,0,.4);
+}
+
+.content-results-result:hover .heart,
+.content-results-result:hover .register-signin {
+	visibility: visible;
+}
+
+.content-results-result .heart,
+.content-results-result .register-signin {
+	visibility: hidden;
+	position: absolute;
+	color: lightgray;
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	padding: .15em;
+	top: 2%;
+	text-align: center;
+}
+
+.heart {
+	right: 17%;
+}
+
+.register-signin {
+	right: 2.5%;
+}
+
+.heart:hover,
+.register-signin:hover {
+	color: gray;
+	cursor: pointer;
+	border-color: gray;
+}
+
+.content-results-result .fa {
+	font-size: .7em;
+}
+
+.content-results-result h4,
+.content-results-result p.shop-name,
+.content-results-result p.result-price {
+	position: absolute;
+}
+
+.content-results-result h4 {
+	bottom: 10%;
+	left: 3%;
+	font-size: .6em;
+}
+
+.content-results-result p.shop-name {
+	bottom: 2%;
+	left: 3%;
+	font-size: .55em;
+	color: rgb(136, 136, 136);
+}
+
+.content-results-result p.result-price {
+	bottom: 2%;
+	color: rgb(122, 190, 74);
+	right: 3%;
+	font-size: .6em;
+}
+
+.content-footer {
+	@include clearfix;
+}
+
+/**************************
+Footer Styling
+**************************/
+
+$grid-columns: 10;
+
+footer {
+	background-color: rgb(245, 245, 241);
+	padding-top: 2em;
+}
+
+.footer-outer-container {
+	@include outer-container(980px);
+}
+
+.subscribe {
+	border: 8px solid rgb(239, 239, 235);
+	border-radius: 5px;
+	margin-bottom: 2em;
+	padding: 1.5em;
+	text-align: center;
+}
+
+.subscribe-heading {
+	margin-bottom: .6em;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+input[type="email"] {
+	padding:8px 15px;
+    border: 1px solid rgb(207, 203, 200);
+    border-radius: 3px;
+    width: 250px;
+    font-size: 1em;
+}
+
+.subscribe input[type="submit"] {
+	padding:8px 15px;
+	color: white;
+	background-color: rgb(59, 168, 194);
+    border-radius: 3px;
+    border: 1px solid rgb(56, 152, 175);
+    font-size: 1em;	
+}
+
+.subscribe input[type="submit"]:hover {
+	background-color: rgb(71, 176, 201);
+	cursor: pointer;
+}
+
+.main-footer-links {
+	@include clearfix;
+	border-bottom: 1px solid rgb(225,227,223);
+	padding-bottom: 2em;
+}
+
+.main-footer-links > div {
+	@include span-columns(2);
+	font-size: .85em;
+	line-height: 2em;
+}
+
+.main-footer-links a {
+	display: block;
+}
+
+.main-footer-links i {
+	font-size: 1.2em;
+	vertical-align: middle;
+	margin-right: .3em;
+}
+
+.main-footer-links div:first-child p {
+	line-height: 1.5em;
+}
+
+.shop-create {
+	background: linear-gradient(0deg, rgb(71, 176, 201) 95%, rgb(154, 208, 223));
+	border: 1px solid rgb(56, 152, 175);
+	border-radius: 3px;
+	color: white;
+	font-size: 1em;
+	margin: .5em 0 1.5em .1em;
+	padding: .3em;
+}
+
+.shop-create:hover {
+	background-color: rgb(59, 168, 194);
+	cursor: pointer;
+}
+
+.footer-footer {
+	margin-top: 1em;
+}
+
+.footer-buttons {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+.footer-buttons i {
+	font-size: 1.5em;
+}
+
+.footer-buttons li, .footer-buttons ul, .help {
+	display: inline-block;
+}
+
+.footer-buttons ul button {
+	background-color: rgb(245, 245, 241);
+	border: none;
+	border-top: 1px solid rgb(226, 226, 226);
+	border-bottom: 1px solid rgb(226, 226, 226);
+	border-left: 1px solid rgb(226, 226, 226);
+	border-radius: 0;
+	color: rgb(125, 119, 115);
+	font-size: .75em;
+	padding: .9em .5em;
+}
+
+.footer-buttons ul .country {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: .7em .4em .9em .4em;
+	position: relative;
+	top: 1px;
+}
+
+.footer-buttons ul .currency {
+	border-right: 1px solid rgb(226, 226, 226);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;	
+}
+
+.footer-buttons button:hover {
+	background-color: rgb(205, 233, 240);
+	color: rgb(22, 146, 179);
+	cursor: pointer;
+}
+
+.help {
+	background: linear-gradient(0deg, rgb(243, 243, 242) 95%, white);
+	border: 1px solid rgb(216, 213, 210);
+	border-radius: 3px;
+	color: rgb(125, 119, 115);
+	font-size: .9em;
+	font-weight: bold;
+	margin-left: 1.5em;
+	padding: .65em 4em;
+	vertical-align: middle;
+}
+
+.footer-buttons button.help:hover {
+	background: linear-gradient(0deg, rgb(235, 235, 234) 95%, white);
+	color: rgb(125, 119, 115);
+}
+
+.footer-fine-print {
+	font-size: .75em;
+	margin: auto;
+	margin-bottom: 2em;
+	text-align: center;
+	width: 70%;
+}
+
+.footer-fine-print li {
+	display: inline-block;
+	margin-right: 1.5em;
+}
+
+.footer-fine-print li:first-child {
+	color: rgb(155, 155, 155);
+}
+
+.footer-fine-print a {
+	color: rgb(102, 102, 102);
+}
+
+.footer-fine-print a:visited {
+	color: rgb(102, 102, 102);
+}
