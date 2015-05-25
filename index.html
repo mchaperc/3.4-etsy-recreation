@@ -229,6 +229,11 @@
 		</div>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script id="show-results-template" type="text/x-handlebars-template">
+		{{#each results}}
+			<li><a href="{{}}">{{}}</a></li>
+		{{/each}}
+	</script>
 	<script id="expressions-template" type="text/x-handlebars-template">
 		{{#each results}}
 		<div class="content-results-result">
