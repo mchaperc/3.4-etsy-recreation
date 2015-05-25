@@ -277,17 +277,22 @@ Sidebar Styling
 	font-size: .85em;
 }
 
-.content-categories a:first-child {
+a .content-categories-heading {
 	color: black;
 	font-size: 100%;
 }
 
-.content-categories a:first-child:hover {
+a .content-categories-heading:hover {
 	color: black;
 }
 
-.content-categories a:first-child:visited {
+a .content-categories-heading:visited {
 	color: black;
+}
+
+.content-categories-results-placeholder > a {
+	display: block;
+	margin-bottom: .3em;
 }
 
 .content-refine-heading {
@@ -395,6 +400,10 @@ Results Styling
 	font-size: 1.3em;
 	padding-bottom: .8em;
 	font-family: serif;
+}
+
+.content-results-category span {
+	font-weight: bold;
 }
 
 .content-results-category-tree {
@@ -531,6 +540,10 @@ Results Styling
 
 .content-footer {
 	@include clearfix;
+}
+
+.content-pages li {
+	display: inline-block;
 }
 
 /**************************

@@ -250,15 +250,19 @@ Sidebar Styling
 .content-sidebar a {
   font-size: .85em; }
 
-.content-categories a:first-child {
+a .content-categories-heading {
   color: black;
   font-size: 100%; }
 
-.content-categories a:first-child:hover {
+a .content-categories-heading:hover {
   color: black; }
 
-.content-categories a:first-child:visited {
+a .content-categories-heading:visited {
   color: black; }
+
+.content-categories-results-placeholder > a {
+  display: block;
+  margin-bottom: .3em; }
 
 .content-refine-heading {
   margin-bottom: .5em; }
@@ -351,6 +355,9 @@ Results Styling
   font-family: serif; }
   .content-results:last-child {
     margin-right: 0; }
+
+.content-results-category span {
+  font-weight: bold; }
 
 .content-results-category-tree {
   width: 50%;
@@ -481,6 +488,9 @@ Results Styling
   clear: both;
   content: "";
   display: table; }
+
+.content-pages li {
+  display: inline-block; }
 
 /**************************
 Footer Styling

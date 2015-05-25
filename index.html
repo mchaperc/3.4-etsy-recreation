@@ -26,38 +26,8 @@
 		</div>
 	</header>
 	<section class="shop-by">
-		<div class="outer-container">
-		<h3 class="shop-by-title">Shop by "whiskey" category</h3>
-		<div class="shop-by-category">
-			<a href="https://www.etsy.com/search/home-and-living?q=whiskey&ref=esearch_group0"><img src="https://img0.etsystatic.com/057/1/9997414/il_570xN.745560744_9880.jpg" alt="image of a whiskey jar"></a>
-			<h4>Home &amp; Living</h4>
-			<p>9,142 Items</p>
-			<i class="fa fa-chevron-right"></i>
-		</div>
-		<div class="shop-by-category">
-			<a href="https://www.etsy.com/search/art-and-collectibles?q=whiskey&ref=esearch_group1"><img src="https://img0.etsystatic.com/028/0/9204721/il_570xN.604862886_fzjl.jpg" alt="2 whiskey glasses painted on newspaper in a frame"></a>
-			<h4>Art &amp; Collectibles</h4>
-			<p>3,766 Items</p>
-			<i class="fa fa-chevron-right"></i>
-		</div>
-		<div class="shop-by-category">
-			<a href="https://www.etsy.com/search/weddings?q=whiskey&ref=esearch_group2"><img src="https://img1.etsystatic.com/021/0/7905522/il_570xN.481243001_lvze.jpg" alt="3 wood barrels with initials burned into them"></a>
-			<h4>Weddings</h4>
-			<p>2,592 Items</p>
-			<i class="fa fa-chevron-right"></i>
-		</div>
-		<div class="shop-by-category">
-			<a href="https://www.etsy.com/search/clothing?q=whiskey&ref=esearch_group3"><img src="https://img0.etsystatic.com/038/4/9046066/il_570xN.656674626_1ilq.jpg" alt="A mannequin wearing a dumb shirt"></a>
-			<h4>Clothing</h4>
-			<p>1,358 Items</p>
-			<i class="fa fa-chevron-right"></i>
-		</div>
-		<div class="shop-by-category">
-			<a href="https://www.etsy.com/search/jewelry?q=whiskey&ref=esearch_group4"><img src="https://img1.etsystatic.com/051/2/5140519/il_570xN.698684781_1gx4.jpg" alt="A ring with barrel wood inlay"></a>
-			<h4>Jewelry</h4>
-			<p>1,241 Items</p>
-			<i class="fa fa-chevron-right"></i>
-		</div>
+		<div class="outer-container shop-by-placeholder">
+			<h2 class="waiting-for-search">Please enter a keyword or keywords in order to search.</h2>
 		</div>
 	</section>
 	<section class="content">
@@ -116,7 +86,7 @@
 		<section class="content-results">
 			<div class="content-results-category-tree">
 				<a href="https://www.etsy.com/search?q=whiskey">All Categories</a> <i class="fa fa-chevron-right"></i> 
-				<p class="content-results-category"><span>"whiskey"</span> (21,935 Results)</p>
+				<p class="content-results-category"></p>
 			</div>
 			<div class="content-results-sort">
 					<p>Sort by: </p>
@@ -124,21 +94,13 @@
 			</div>
 			<div class="content-results-placeholder"></div>
 			<div class="content-footer">
-			<p class="content-related-categories">Related to <span>whiskey</span></p>
+			<p class="content-related-categories">Related to <span>{{search keyword}}</span></p>
 			<ul class="content-related-categories-links">
-				<li><a href="https://www.etsy.com/search?q=whiskey+decanter&ref=related">whiskey decanter</a></li>
-				<li><a href="https://www.etsy.com/search?q=whiskey+glass&ref=related">whiskey glass</a></li>
-				<li><a href="https://www.etsy.com/search?q=whiskey+barrel&ref=related">whiskey barrel</a></li>
-				<li><a href="https://www.etsy.com/search?q=bourbon&ref=related">bourbon</a></li>
-				<li><a href="https://www.etsy.com/search?q=whiskey+shirt&ref=related">whiskey shirt</a></li>
-				<li><a href="https://www.etsy.com/search?q=jack+daniels&ref=related">jack daniels</a></li>
-				<li><a href="https://www.etsy.com/search?q=scotch&ref=related">scotch</a></li>
-				<li><a href="https://www.etsy.com/search?q=beer&ref=related">beer</a></li>
-				<li><a href="https://www.etsy.com/search?q=cigar&ref=related">cigar</a></li>
-				<li><a href="https://www.etsy.com/search?q=flask&ref=related">flask</a></li>
+
 			</ul>
-			<p>Looking for shops? <a href="https://www.etsy.com/shop/whiskeynweddingbells?ref=shop_name_search_sugg">whiskeynweddingbells</a>, <a href="https://www.etsy.com/shop/WhiskeyDogWares?ref=shop_name_search_sugg">WhiskeyDogWares</a>, <a href="https://www.etsy.com/shop/WhiskeysWhims?ref=shop_name_search_sugg">Whiskey Whims.</a> <a href="https://www.etsy.com/search/shops?q=whiskey&search_type=shops&search_query=whiskey">See more.</a></p>
-			<ul class="content-pages">
+			<p class="shops-placeholder">Looking for shops? </p><!-- 
+			 --><a href="https://www.etsy.com/search/shops?q=whiskey&search_type=shops&search_query=whiskey">See more.</a>
+			<!-- <ul class="content-pages">
 				<li><i class="fa fa-chevron-left"></i></li>
 				<li>1</li>
 				<li>2</li>
@@ -151,7 +113,7 @@
 				<li>...</li>
 				<li>250</li>
 				<li><i class="fa fa-chevron-right"></i></li>
-			</ul>
+			</ul> -->
 			</div>	
 		</section>
 		</div>
@@ -228,10 +190,18 @@
 		</footer>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-	<script id="show-results-template" type="text/x-handlebars-template">
+	<script id="shop-by-category-results" type="text/x-handlebars-template">
+		<h3 class="shop-by-title">Shop by "{{keyword}}" category</h3>
 		{{#each results}}
-			<li><a href="{{}}">{{}}</a></li>
+		<div class="shop-by-category">
+			<a href="{{category-link}}"><img src="{{image-link}}" alt=""></a>
+			<h4>{{category-name}}</h4>
+			<p>{{number of items}} Items</p>
+			<i class="fa fa-chevron-right"></i>
+		</div>
 		{{/each}}
 	</script>
 	<script id="expressions-template" type="text/x-handlebars-template">
@@ -244,6 +214,16 @@
 			<p class="shop-name">{{checkShop Shop.shop_name}}</p>
 			<p class="result-price">${{price}} USD</p>
 		</div>
+		{{/each}}
+	</script>
+	<script  id="related-search-links" type="text/x-handlebars-template">
+		{{#each results}}
+			<li><a href="{{related search link}}">{{related search term}}</a></li>
+		{{/each}}
+	</script>
+	<script id="looking-for-shops" type="text/x-handlebars-template">
+		{{#each results}}
+			<a href="{{shop suggestion link}}">{{shop suggestion name}}</a>, 
 		{{/each}}
 	</script>
 	<script src="js/main.js"></script>
